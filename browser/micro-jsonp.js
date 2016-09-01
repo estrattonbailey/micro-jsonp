@@ -47,8 +47,7 @@ exports.default = function (url) {
     cleanup();
   };
 
-  // create script
-  script.src = url + '&' + param;
+  script.src = url + '&' + query;
   document.head.appendChild(script);
 
   return cancel;

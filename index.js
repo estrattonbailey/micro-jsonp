@@ -34,9 +34,7 @@ export default (url, opts = {}) => {
     cleanup()
   }
 
-  // create script
   script.src = `${url}&${query}`
-  console.log(`${url}&${query}`)
   document.head.appendChild(script)
 
   return cancel
