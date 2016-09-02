@@ -1,3 +1,7 @@
+# micro-jsonp
+A hyper-minimal standalone jsonp implementation in ES6. Inspired by [jsonp](https://github.com/webmodules/jsonp).
+
+## Usage
 ```javascript
 import jsonp from 'micro-jsonp'
 
@@ -9,3 +13,18 @@ jsonp('path/to/endpoint?data=Data', {
   }
 })
 ```
+
+## API
+
+### jsonp(url[, options])
+
+#### url
+The endpoint *and* serialized data e.g. `path/to/endpoint?email=ericstrattonbailey%2B1%40gmail.com`.
+
+#### options
+ - `param (optional, type: string, default: 'callback')`: the name of the query param your service uses to specify the callback function `default: 'callback'`
+ - `response (required, type: function)`: your data callback function - receives `err, data` params - users must handle success/error state
+ - `timeout (optional, type: number, default: 60000)`: an optional timeout. If `false`, script will not time out.
+
+* * *
+ MIT License
