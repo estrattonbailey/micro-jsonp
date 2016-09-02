@@ -2,7 +2,7 @@
   "name": "micro-jsonp",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/micro-jsonp.js",
+  "main": "dist/index.js",
   "jsnext:main": "index.js",
   "scripts": {
     "build": "mkdir -p dist && babel index.js --out-dir dist",
