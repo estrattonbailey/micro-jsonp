@@ -2,12 +2,23 @@
   "name": "micro-jsonp",
   "version": "1.0.1",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/micro-json.js",
   "jsnext:main": "index.js",
   "scripts": {
-    "build": "mkdir -p dist && babel index.js --out-dir dist",
-    "size": "bundle-size ./dist/index.js",
+    "build": "mkdir -p dist && browserify index.js --standalone micro-jsonp > dist/micro-jsonp.js",
+    "size": "bundle-size ./dist/micro-jsonp.js",
     "test": "ava test -v"
+  },
+  "browserify": {
+    "debug": true,
+    "cache": {},
+    "packageCache": {},
+    "extension": [
+      "js"
+    ],
+    "transform": [
+      "babelify"
+    ]
   },
   "repository": {
     "type": "git",
@@ -24,14 +35,15 @@
     "ava": "^0.16.0",
     "babel-cli": "^6.14.0",
     "babel-preset-es2015": "^6.9.0",
-    "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.9.0",
     "bundle-size": "^0.7.0",
     "jsdom": "^9.4.1",
     "jsdom-global": "^2.0.0",
     "query-string": "^4.2.3",
-    "rollup": "^0.34.1",
-    "rollup-watch": "^2.5.0"
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "minifyify": "^7.3.3",
+    "watchify": "^3.7.0"
   },
   "dependencies": {}
 }
