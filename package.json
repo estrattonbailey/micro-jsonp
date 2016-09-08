@@ -2,7 +2,7 @@
   "name": "micro-jsonp",
   "version": "1.0.2",
   "description": "",
-  "main": "dist/micro-json.js",
+  "main": "dist/micro-jsonp.js",
   "jsnext:main": "index.js",
   "scripts": {
     "build": "mkdir -p dist && browserify index.js --standalone micro-jsonp > dist/micro-jsonp.js",
