@@ -1,5 +1,5 @@
 # micro-jsonp
-A hyper-minimal standalone jsonp implementation in ES6. Inspired by [jsonp](https://github.com/webmodules/jsonp).
+Teeny-tiny JSONP handler. **386b gzipped.**
 
 ## Usage
 ```javascript
