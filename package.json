@@ -1,6 +1,6 @@
 {
   "name": "micro-jsonp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/micro-jsonp.js",
   "jsnext:main": "index.js",
